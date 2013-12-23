@@ -1,0 +1,22 @@
+[core]
+  pager = less -R
+  filemode = false
+  safecrlf = false
+  autocrlf = false
+[color]
+  ui = auto
+  interactive = auto
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  llg = !"git lg1"
+  ll = log --stat --abbrev-commit
+  d = diff --color-words
+  dh = diff --color-words head
+  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+[user]
+  name = Jean-Luc Boes
+  email = jean-luc.boes@rbs.fr
