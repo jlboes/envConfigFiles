@@ -97,7 +97,7 @@ alias commit='git commit'
 alias mcommit='git commit -m'
 #alias lg='git lg'
 alias coint='git checkout integration'
-alias cc='ch clear-template-cache; ch clear-datacache; ch csc'
+alias cc='ch clear-template-cache; ch clear-datacache; ch csc; ch cwc'
 alias chtheme='ch theme.install;ch theme.compile-theme'
 alias di="git diff"
 alias dint='cook $i e:int c.deploy:without_framework=True'
